@@ -29,8 +29,8 @@
     
     if (self) {
         // View settings
-        self.collectionView.backgroundColor = [UIColor whiteColor];
-        
+        self.collectionView.backgroundColor = [UIColor clearColor];
+        self.view.backgroundColor = [UIColor colorWithRed:0.145 green:0.157 blue:0.176 alpha:1.0];
         // Register cell class
         [self.collectionView registerClass:[QBAssetsCollectionViewCell class]
                 forCellWithReuseIdentifier:@"AssetsCell"];

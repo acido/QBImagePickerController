@@ -38,8 +38,9 @@
         
         // Create name label
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(8 + 70 + 18, 22, 180, 21)];
-        nameLabel.font = [UIFont systemFontOfSize:17];
-        nameLabel.textColor = [UIColor blackColor];
+        nameLabel.font = [UIFont fontWithName:@"BrandonText-Bold" size:16];
+        nameLabel.textColor = [UIColor whiteColor];
+        nameLabel.backgroundColor = [UIColor clearColor];
         nameLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
         
         [self.contentView addSubview:nameLabel];
@@ -47,12 +48,18 @@
         
         // Create count label
         UILabel *countLabel = [[UILabel alloc] initWithFrame:CGRectMake(8 + 70 + 18, 46, 180, 15)];
-        countLabel.font = [UIFont systemFontOfSize:12];
-        countLabel.textColor = [UIColor blackColor];
+        countLabel.font = [UIFont fontWithName:@"BrandonText-Bold" size:12];
+        countLabel.textColor = [UIColor whiteColor];
+        countLabel.backgroundColor = [UIColor clearColor];
         countLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
         
         [self.contentView addSubview:countLabel];
         self.countLabel = countLabel;
+        
+        self.backgroundColor = [UIColor colorWithRed:0.192 green:0.208 blue:0.235 alpha:1.0];
+        UIView *selectedView = [[UIView alloc]init];
+        selectedView.backgroundColor = [UIColor colorWithRed:0.145 green:0.157 blue:0.176 alpha:1.0];
+        self.selectedBackgroundView =  selectedView;
     }
     
     return self;

@@ -23,8 +23,9 @@
     if (self) {
         // Create a label
         UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        textLabel.font = [UIFont systemFontOfSize:17];
-        textLabel.textColor = [UIColor blackColor];
+        textLabel.font = [UIFont fontWithName:@"BrandonText-Bold" size:14.0f];
+        textLabel.textColor = [UIColor whiteColor];
+        textLabel.backgroundColor = [UIColor clearColor];
         textLabel.textAlignment = NSTextAlignmentCenter;
         
         [self addSubview:textLabel];

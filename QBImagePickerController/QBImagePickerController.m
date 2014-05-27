@@ -89,6 +89,9 @@ ALAssetsFilter * ALAssetsFilterFromQBImagePickerControllerFilterType(QBImagePick
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    //view settings
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.145 green:0.157 blue:0.176 alpha:1.0];
     
     // Load assets groups
     [self loadAssetsGroupsWithTypes:self.groupTypes
